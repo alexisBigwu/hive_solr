@@ -53,7 +53,7 @@ public class LWSerDe extends AbstractSerDe {
   @Override
   public Object deserialize(Writable data) throws SerDeException {
     if (!(data instanceof LWDocumentWritable)) {
-      return null;
+      return "null";
     }
 
     row.clear();
